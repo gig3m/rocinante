@@ -1,0 +1,139 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+---
+name: Rocinante
+author: Kyle Arrington (http://github.com/gig3m)
+uuid: 1b4ba720-242e-4d8a-a9a6-7b663041f8e2
+colorSpaceName: 'sRGB'
+semanticClass: 'rocinante.theme'
+# Color reference
+# --------------------------------------------------------------------------------------
+
+# #3F414D
+# #425C7C
+# ---------
+# #455682
+# #62758B
+# #1ABC9C
+# #65DEC2
+# ---------
+# #D93232
+# #C33C4A
+# #FF435B
+# #EB606B
+# #D24D57
+# #F99157
+# #FAC863
+# #ca9b55
+# #DBC08A
+# #1ABC9C
+# #50B4DC
+# #6189bb
+# #7BA1D0
+# #83AADA
+# #AFBAD4
+# #B49CDA
+# #E5E5E5
+# 
+
+# Settings
+# --------------------------------------------------------------------------------------
+settings   :
+- settings :
+    background    : "#232323"
+    caret         : "#FFFFFF"
+    foreground    : "#E8E2DF"
+    invisibles    : "#404040"
+    lineHighlight : "#333435"
+    selection     : "#62758B40"
+- name: Source
+  scope    : source
+  settings :
+    background : "#232323"
+    fontStyle  : 'regular'
+    foreground : "#E8E2DF"
+- name: Comment
+  scope    : comment
+  settings :
+    fontStyle  : 'regular'
+    foreground : "#8B8B8B"
+- name: Keyword
+  scope    : keyword, storage
+  settings :
+    fontStyle  : 'regular'
+    foreground : "#FAC863"
+- name: Function (definition)
+  scope    : support.function
+  settings :
+    fontStyle  : 'regular'
+    foreground : "#ca9b55"
+- name: Class (definition)
+  scope    : entity.name
+  settings :
+    background : "#BE493C1A"
+    fontStyle  : 'regular'
+    foreground : "#FF435B"
+- name: Number
+  scope    : constant.numeric
+  settings :
+    background : "#8D76AC1A"
+    fontStyle  : 'regular'
+    foreground : "#B49CDA"
+- name: Variable
+  scope    : variable.language, variable.other
+  settings :
+    background : "#2A91A90D"
+    fontStyle  : 'regular'
+    foreground : "#50B4DC"
+- name: Constant
+  scope    : constant
+  settings :
+    background : "#BA88661A"
+    fontStyle  : 'regular'
+    foreground : "#C29B7A"
+- name: Constant (other variable)
+  scope    : variable.other.constant
+  settings :
+    fontStyle  : 'regular'
+    foreground : "#FF435B"
+- name: Constant (built-in)
+  scope    : constant.language
+  settings :
+    fontStyle  : 'regular'
+    foreground : "#71BACC"
+- name: String
+  scope    : string
+  settings :
+    background : "#65DEC20F"
+    fontStyle  : 'regular'
+    foreground : "#1ABC9C"
+- name: Library function
+  scope    : variable.language
+  settings :
+    fontStyle  : 'regular'
+    foreground : "#3FC172"
+- name: Library type
+  scope    : support.type
+  settings :
+    foreground: "#AFBAD4"
+- name: Library constant
+  scope    : support.constant
+  settings :
+    fontStyle  : 'regular'
+    foreground : "#62758B"
+- name: Markup tag
+  scope    : storage
+  settings :
+    fontStyle  : 'regular'
+    foreground : "#E8BF6A"
+- name: Invalid
+  scope    : invalid
+  settings :
+    background : "#D93232"
+    foreground : "#FFFFFF"
+- name: String interpolation
+  scope: constant.character.escaped, constant.character.escape, string source, string
+    source.ruby
+  settings:
+    fontStyle  : 'regular'
+    foreground : "#50B4DC"
+
